@@ -3,48 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <title>Apuestas de Marinera</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
     <h1>Sistema de Apuestas - Concurso de Marinera</h1>
-    <nav>
-        <a href="#">Inicio</a> |
-        <a href="#">Competidores</a> |
-        <a href="#">Apuestas</a> |
-        <a href="#">Resultados</a>
-    </nav>
 </header>
+
+<nav>
+    <a href="#">Inicio</a>
+    <a href="#">Competidores</a>
+    <a href="#">Apuestas</a>
+    <a href="#">Resultados</a>
+</nav>
 
 <main>
 
-    <section>
-        <h2>¿Qué es nuestro sistema?</h2>
-        <p>
-            Plataforma dedicada a registrar apuestas sobre competencias
-            de marinera norteña a nivel regional y nacional.
-        </p>
-    </section>
+<section>
+    <h2>¿Qué es nuestro sistema?</h2>
+    <p>
+        Plataforma dedicada a registrar apuestas sobre competencias
+        de marinera norteña a nivel regional y nacional.
+    </p>
+</section>
 
-    <section>
-        <h2>Competencias Destacadas</h2>
+<section>
+    <h2>Categorías Oficiales</h2>
 
-        <article>
-            <h3>Marinera Norteña - Categoría Juvenil</h3>
-            <p>Participan las mejores parejas juveniles del país.</p>
-        </article>
+    <div class="card">Pre-Infante</div>
+    <div class="card">Infante</div>
+    <div class="card">Infantil</div>
+    <div class="card">Junior</div>
+    <div class="card">Juvenil</div>
+    <div class="card">Adulto</div>
+    <div class="card">Senior</div>
+    <div class="card">Campeón de Campeones</div>
 
-        <article>
-            <h3>Marinera Norteña - Categoría Adultos</h3>
-            <p>Competencia principal con premios nacionales.</p>
-        </article>
+</section>
 
-    </section>
+<section>
+    <h2>Realizar Apuesta</h2>
 
-    <section>
-        <h2>Realizar Apuesta</h2>
-        <p>Seleccione la pareja favorita y registre su apuesta.</p>
-    </section>
+    <form>
+        <label>Seleccione Categoría:</label>
+        <select>
+            <option>Pre-Infante</option>
+            <option>Infante</option>
+            <option>Infantil</option>
+            <option>Junior</option>
+            <option>Juvenil</option>
+            <option>Adulto</option>
+            <option>Senior</option>
+            <option>Campeón de Campeones</option>
+        </select>
+
+        <label>Monto de Apuesta (S/):</label>
+        <input type="number" placeholder="Ingrese monto">
+
+        <button type="submit">Apostar Ahora</button>
+    </form>
+
+</section>
 
 </main>
 
